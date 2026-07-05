@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "842387983117",
+    "firebase_url": "https://studio-1699278693-826cd-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "studio-1699278693-826cd",
+    "storage_bucket": "studio-1699278693-826cd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:842387983117:android:aaeef4fd03d48204677e44",
+        "android_client_info": {
+          "package_name": "com.av.avmessenger"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDDEda0pXy0Lu22q3c0dd9fDt--ELFLJ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

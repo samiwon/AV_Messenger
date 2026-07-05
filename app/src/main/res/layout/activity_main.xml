@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainback"
+    tools:context=".MainActivity">
+
+    <!-- TOOLBAR -->
+    <LinearLayout
+        android:id="@+id/toolBar"
+        android:layout_width="384dp"
+        android:layout_height="78dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/appNameText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_bold"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="#2a364e"
+            android:textSize="26sp" />
+
+        <ImageView
+            android:id="@+id/logoutimg"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/logout" />
+    </LinearLayout>
+
+    <!-- MAIN LIST (FIXED) -->
+
+    <!-- BOTTOM ICON BAR -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mainUserRecyclerView"
+        android:layout_width="377dp"
+        android:layout_height="447dp"
+        android:layout_marginTop="260dp"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolBar" />
+
+    <ImageView
+        android:id="@+id/camBut"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="16dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/camera"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="830dp" />
+
+    <ImageView
+        android:id="@+id/chatBut"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="16dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/chat"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="830dp" />
+
+    <ImageView
+        android:id="@+id/settingBut"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="16dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/sett"
+        tools:layout_editor_absoluteX="249dp"
+        tools:layout_editor_absoluteY="830dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
