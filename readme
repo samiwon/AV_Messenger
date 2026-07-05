@@ -1,0 +1,117 @@
+# AV Messenger
+
+AV Messenger is an Android chat application built with Java and Firebase. The app provides user authentication, profile creation, a contact/user list, real-time one-to-one messaging, and basic profile settings.
+
+## Overview
+
+This project is a simple messaging app that allows users to:
+
+- create an account and sign in
+- set a profile image and status
+- browse other registered users
+- open private chat conversations
+- send and receive messages in real time
+- log out securely
+
+## Features
+
+- Firebase Authentication for email/password sign-in and registration
+- Firebase Realtime Database for storing user data and chat messages
+- Firebase Storage for profile image uploads
+- Splash screen and login/registration flow
+- User list screen with profile details
+- Chat screen with message sending and receiving
+- Profile settings screen for updating display name and status
+- Material Design UI with RecyclerView for lists
+
+## Tech Stack
+
+- Android Studio
+- Java
+- AndroidX / Material Components
+- Firebase Authentication
+- Firebase Realtime Database
+- Firebase Storage
+- Picasso for image loading
+- CircleImageView for circular profile photos
+
+## Project Structure
+
+```text
+app/
+  src/
+    main/
+      java/com/av/avmessenger/
+        MainActivity.java
+        login.java
+        registration.java
+        chatwindo.java
+        setting.java
+        splash.java
+        Users.java
+        UserAdpter.java
+        messagesAdpter.java
+        msgModelclass.java
+      res/
+        layout/
+        values/
+        drawable/
+        mipmap/
+  build.gradle
+build.gradle
+settings.gradle
+```
+
+## Prerequisites
+
+Before building the app, make sure you have:
+
+- Android Studio installed
+- JDK 17 or newer
+- an Android emulator or a physical device
+- a Firebase project
+
+## Firebase Setup
+
+1. Create a Firebase project in the Firebase console.
+2. Enable the following Firebase services:
+   - Authentication
+   - Realtime Database
+   - Storage
+3. In Authentication, enable the Email/Password sign-in method.
+4. Download the Firebase configuration file and place it at:
+   - app/google-services.json
+5. Make sure the Android package name matches:
+   - com.av.avmessenger
+
+## Build and Run
+
+1. Clone the repository:
+
+```bash
+git clone <repository-url>
+cd AV_Messenger
+```
+
+2. Open the project in Android Studio.
+
+3. Sync Gradle files.
+
+4. Run the app on an emulator or connected device.
+
+## Notes
+
+The app currently uses Firebase Realtime Database with the following main paths:
+
+- /user for user profiles
+- /chats/{senderRoom}/messages for chat messages
+
+Profile images are uploaded to Firebase Storage and their download URLs are stored in the user profile record.
+
+## Screenshots
+
+Screenshots can be added here once the app is running and tested on a device.
+
+## License
+
+No explicit license has been specified for this project yet. If you plan to share or distribute it publicly, consider adding a license file.
